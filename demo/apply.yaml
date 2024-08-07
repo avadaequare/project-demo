@@ -1,0 +1,12 @@
+---
+- name: Apply configurations based on group_vars
+  hosts: all
+  
+  roles:
+    - name: Apply Java Installation
+      role: java
+      tags: java
+
+    - name: Apply python Installation
+      role: python
+      tags: python
